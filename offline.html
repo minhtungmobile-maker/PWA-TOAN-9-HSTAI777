@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <!-- META CORE -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#0d47a1" />
+  <meta name="description" content="PWA Toán Lớp 9 – Học đầy đủ SGK, chạy offline, tối ưu điện thoại & laptop" />
+
+  <title>PWA TOÁN 9 – CHUẨN SGK</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon-192.png">
+
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+
+  <!-- STYLE CORE -->
+  <style>
+    :root {
+      --primary: #0d47a1;
+      --accent: #1976d2;
+      --bg: #f5f7fb;
+      --text: #111;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 18px; /* FIX CHỮ NHỎ TRÊN ĐIỆN THOẠI */
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      font-size: 16px;
+      opacity: 0.95;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    section h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+      display: block;
+      font-size: 18px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* MOBILE TỐI ƯU */
+    @media (max-width: 600px) {
+      body {
+        font-size: 19px; /* TO HƠN CHO HỌC SINH */
+      }
+      header h1 {
+        font-size: 24px;
+      }
+      section h2 {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>PWA TOÁN LỚP 9</h1>
+  <p>Đầy đủ SGK – Offline – Chuẩn Giáo viên</p>
+</header>
+
+<main>
+
+  <!-- ĐẠI SỐ -->
+  <section>
+    <h2>📘 Đại số</h2>
+    <div class="grid">
+      <div class="card"><a href="lessons/dai-so/ch1-can-bac-hai.html">Căn bậc hai</a></div>
+      <div class="card"><a href="lessons/dai-so/ch2-ham-so-bac-nhat.html">Hàm số bậc nhất</a></div>
+      <div class="card"><a href="lessons/dai-so/ch3-he-phuong-trinh.html">Hệ phương trình</a></div>
+      <div class="card"><a href="lessons/dai-so/ch4-ham-so-bac-hai.html">Hàm số bậc hai</a></div>
+    </div>
+  </section>
+
+  <!-- HÌNH HỌC -->
+  <section>
+    <h2>📐 Hình học</h2>
+    <div class="grid">
+      <div class="card"><a href="lessons/hinh-hoc/ch1-he-thuc-luong.html">Hệ thức lượng</a></div>
+      <div class="card"><a href="lessons/hinh-hoc/ch2-duong-tron.html">Đường tròn</a></div>
+      <div class="card"><a href="lessons/hinh-hoc/ch3-goc-noi-tiep.html">Góc nội tiếp</a></div>
+    </div>
+  </section>
+
+  <!-- LUYỆN TẬP -->
+  <section>
+    <h2>📝 Luyện tập & Đề thi</h2>
+    <div class="grid">
+      <div class="card"><a href="exercises/de-15-phut.html">Đề 15 phút</a></div>
+      <div class="card"><a href="exercises/de-1-tiet.html">Đề 1 tiết</a></div>
+      <div class="card"><a href="exercises/de-on-thi-vao-10-1.html">Ôn thi vào 10 – Đề 1</a></div>
+      <div class="card"><a href="exercises/de-on-thi-vao-10-2.html">Ôn thi vào 10 – Đề 2</a></div>
+    </div>
+  </section>
+
+  <!-- HỌC SINH YẾU -->
+  <section>
+    <h2>🆘 Học sinh yếu – Mất gốc</h2>
+    <div class="grid">
+      <div class="card"><a href="hs-yeu/nen-tang.html">Kiến thức nền tảng</a></div>
+      <div class="card"><a href="hs-yeu/10-dang-bat-buoc.html">10 dạng bắt buộc</a></div>
+      <div class="card"><a href="hs-yeu/de-tu-5-len-9.html">Lộ trình 5 → 9 điểm</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 – PWA TOÁN 9 | Chuẩn SGK – Offline – Giáo viên
+</footer>
+
+<!-- SERVICE WORKER -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+
+</body>
+</html>
